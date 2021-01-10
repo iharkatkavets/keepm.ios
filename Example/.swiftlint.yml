@@ -1,0 +1,22 @@
+included: # paths to include during linting. `--path` is ignored if present.
+- ../KeePassCore/Classes
+- Common
+- iOSApp
+# - Pods_Tests
+# - Common_Tests
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Carthage
+- Pods
+- MacApp
+
+identifier_name:
+  min_length: # only min_length
+    error: 3 # only error
+  excluded: # excluded via string array
+    - id
+    - URL
+    - i
+    - j
+    - c
+    - at

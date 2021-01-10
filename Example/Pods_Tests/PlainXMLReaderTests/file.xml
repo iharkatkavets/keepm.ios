@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeePassFile>
+   <Meta>
+      <Generator>iOSKdbX</Generator>
+      <HeaderHash>/xX2b0Sy52Xxz+E8KoerLJMeoKfMXa/rt8Q7PHkhDaM=</HeaderHash>
+      <DatabaseName />
+      <DatabaseNameChanged>2021-01-08T08:27:31Z</DatabaseNameChanged>
+      <DatabaseDescription />
+      <DatabaseDescriptionChanged />
+      <DefaultUserName />
+      <MaintainanceHistoryDays />
+      <Color />
+      <MasterKeyChanged>2021-01-08T08:27:31Z</MasterKeyChanged>
+      <MasterKeyChangedRec />
+      <MasterKeyChangeForce />
+      <MemoryProtection>
+         <ProtectTitle>False</ProtectTitle>
+         <ProtectUserName>False</ProtectUserName>
+         <ProtectPassword>True</ProtectPassword>
+         <ProtectURL>False</ProtectURL>
+         <ProtectNotes>False</ProtectNotes>
+      </MemoryProtection>
+      <RecycleBinEnabled>True</RecycleBinEnabled>
+      <RecycleBinUUID>AAAAAAAAAAAAAAAAAAAAAA==</RecycleBinUUID>
+      <RecycleBinChanged>2021-01-08T08:27:31Z</RecycleBinChanged>
+      <EntryTemplatesGroup>AAAAAAAAAAAAAAAAAAAAAA==</EntryTemplatesGroup>
+      <EntryTemplatesGroupChanged />
+      <HistoryMaxItems>10</HistoryMaxItems>
+      <HistoryMaxSize>65300</HistoryMaxSize>
+      <LastSelectedGroup>AAAAAAAAAAAAAAAAAAAAAA==</LastSelectedGroup>
+      <LastTopVisibleGroup>AAAAAAAAAAAAAAAAAAAAAA==</LastTopVisibleGroup>
+   </Meta>
+   <Root>
+      <Group>
+         <UUID>chJLodOAQOaIdZgEgKg+wQ==</UUID>
+         <Name>Root</Name>
+         <Notes />
+         <IconID>0</IconID>
+         <Times>
+            <LastModificationTime>2021-01-08T08:27:31Z</LastModificationTime>
+            <CreationTime>2021-01-08T08:27:31Z</CreationTime>
+            <LastAccessTime>2021-01-08T08:27:31Z</LastAccessTime>
+            <ExpiryTime />
+            <Expires>False</Expires>
+            <UsageCount>0</UsageCount>
+            <LocationChanged />
+         </Times>
+      </Group>
+   </Root>
+</KeePassFile>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntryViewController" customModule="iOSApp" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="wdI-rv-8dY" id="7Cg-8c-myY"/>
+                <outlet property="scrollViewBottomConstraint" destination="jOz-iY-ct3" id="fcr-49-izb"/>
+                <outlet property="stackView" destination="oaT-TY-a7g" id="csG-Vj-iAo"/>
+                <outlet property="tapGestureRecognizer" destination="1Qk-uE-B8D" id="Wh4-7m-gLo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="wdI-rv-8dY">
+                    <rect key="frame" x="0.0" y="60" width="414" height="786"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="502" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oaT-TY-a7g">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="502"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0N0-rZ-hDn" firstAttribute="width" secondItem="oaT-TY-a7g" secondAttribute="width" id="ETE-7e-bUm"/>
+                        <constraint firstItem="oaT-TY-a7g" firstAttribute="bottom" secondItem="B4Y-7M-Sku" secondAttribute="bottom" id="Msg-YF-abo"/>
+                        <constraint firstItem="oaT-TY-a7g" firstAttribute="top" secondItem="B4Y-7M-Sku" secondAttribute="top" id="Pbh-df-sdW"/>
+                        <constraint firstItem="oaT-TY-a7g" firstAttribute="trailing" secondItem="B4Y-7M-Sku" secondAttribute="trailing" id="nu7-aJ-Rww"/>
+                        <constraint firstItem="oaT-TY-a7g" firstAttribute="leading" secondItem="B4Y-7M-Sku" secondAttribute="leading" id="sCX-96-buX"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="B4Y-7M-Sku"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="0N0-rZ-hDn"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wdI-rv-8dY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Lb2-Ng-Nka"/>
+                <constraint firstItem="wdI-rv-8dY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bVs-f8-KWW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wdI-rv-8dY" secondAttribute="trailing" id="for-5m-ARV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wdI-rv-8dY" secondAttribute="bottom" constant="16" id="jOz-iY-ct3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="1Qk-uE-B8D" appends="YES" id="9xU-zn-iM2"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
+        </view>
+        <tapGestureRecognizer cancelsTouchesInView="NO" id="1Qk-uE-B8D">
+            <connections>
+                <action selector="tapGestureRecognizerAction:" destination="-1" id="afY-bg-E2x"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

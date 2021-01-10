@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeePassFile>
+   <Meta>
+      <Generator>MiniKeePass</Generator>
+      <HeaderHash>1+pfkFGztMvv0FMnL5sFvZQpBZqLqRwlfhKGK1Tdwr8=</HeaderHash>
+      <DatabaseName />
+      <DatabaseNameChanged>2017-11-23T18:55:45Z</DatabaseNameChanged>
+      <DatabaseDescription />
+      <DatabaseDescriptionChanged>2017-11-23T18:55:45Z</DatabaseDescriptionChanged>
+      <DefaultUserName />
+      <DefaultUserNameChanged>2017-11-23T18:55:45Z</DefaultUserNameChanged>
+      <MaintenanceHistoryDays>365</MaintenanceHistoryDays>
+      <Color />
+      <MasterKeyChanged>2017-11-23T18:55:45Z</MasterKeyChanged>
+      <MasterKeyChangeRec>-1</MasterKeyChangeRec>
+      <MasterKeyChangeForce>-1</MasterKeyChangeForce>
+      <MemoryProtection>
+         <ProtectTitle>False</ProtectTitle>
+         <ProtectUserName>False</ProtectUserName>
+         <ProtectPassword>True</ProtectPassword>
+         <ProtectURL>False</ProtectURL>
+         <ProtectNotes>False</ProtectNotes>
+      </MemoryProtection>
+      <RecycleBinEnabled>True</RecycleBinEnabled>
+      <RecycleBinUUID>AAAAAAAAAAAAAAAAAAAAAA==</RecycleBinUUID>
+      <RecycleBinChanged>2017-11-23T18:55:45Z</RecycleBinChanged>
+      <EntryTemplatesGroup>AAAAAAAAAAAAAAAAAAAAAA==</EntryTemplatesGroup>
+      <EntryTemplatesGroupChanged>2017-11-23T18:55:45Z</EntryTemplatesGroupChanged>
+      <HistoryMaxItems>10</HistoryMaxItems>
+      <HistoryMaxSize>6291456</HistoryMaxSize>
+      <LastSelectedGroup>AAAAAAAAAAAAAAAAAAAAAA==</LastSelectedGroup>
+      <LastTopVisibleGroup>AAAAAAAAAAAAAAAAAAAAAA==</LastTopVisibleGroup>
+      <Binaries />
+      <CustomData />
+   </Meta>
+   <Root>
+      <Group>
+         <UUID>TvV+7TUeSCubDEEOidwvag==</UUID>
+         <Name>General</Name>
+         <Notes />
+         <IconID>48</IconID>
+         <Times>
+            <LastModificationTime>2017-11-23T18:55:45Z</LastModificationTime>
+            <CreationTime>2017-11-23T18:55:45Z</CreationTime>
+            <LastAccessTime>2017-11-23T18:55:45Z</LastAccessTime>
+            <ExpiryTime>2017-11-23T18:55:45Z</ExpiryTime>
+            <Expires>False</Expires>
+            <UsageCount>0</UsageCount>
+            <LocationChanged>2017-11-23T18:55:45Z</LocationChanged>
+         </Times>
+         <IsExpanded>True</IsExpanded>
+         <DefaultAutoTypeSequence />
+         <EnableAutoType>null</EnableAutoType>
+         <EnableSearching>null</EnableSearching>
+         <LastTopVisibleEntry>AAAAAAAAAAAAAAAAAAAAAA==</LastTopVisibleEntry>
+         <Group>
+            <UUID>x0UWIE+aRBSJ0SKVFR+jTw==</UUID>
+            <Name>eMail</Name>
+            <Notes />
+            <IconID>19</IconID>
+            <Times>
+               <LastModificationTime>2017-11-23T18:55:45Z</LastModificationTime>
+               <CreationTime>2017-11-23T18:55:45Z</CreationTime>
+               <LastAccessTime>2017-11-23T18:55:45Z</LastAccessTime>
+               <ExpiryTime>2017-11-23T18:55:45Z</ExpiryTime>
+               <Expires>False</Expires>
+               <UsageCount>0</UsageCount>
+               <LocationChanged>2017-11-23T18:55:45Z</LocationChanged>
+            </Times>
+            <IsExpanded>True</IsExpanded>
+            <DefaultAutoTypeSequence />
+            <EnableAutoType>null</EnableAutoType>
+            <EnableSearching>null</EnableSearching>
+            <LastTopVisibleEntry>AAAAAAAAAAAAAAAAAAAAAA==</LastTopVisibleEntry>
+            <Entry>
+               <UUID>wSFOx7E2R1uor11Hs75a1Q==</UUID>
+               <IconID>19</IconID>
+               <ForegroundColor />
+               <BackgroundColor />
+               <OverrideURL />
+               <Tags />
+               <Times>
+                  <LastModificationTime>2018-01-02T19:09:18Z</LastModificationTime>
+                  <CreationTime>2018-01-02T19:08:18Z</CreationTime>
+                  <LastAccessTime>2018-01-02T19:08:18Z</LastAccessTime>
+                  <ExpiryTime>2018-01-02T19:08:18Z</ExpiryTime>
+                  <Expires>False</Expires>
+                  <UsageCount>0</UsageCount>
+                  <LocationChanged>2018-01-02T19:08:18Z</LocationChanged>
+               </Times>
+               <String>
+                  <Key>Title</Key>
+                  <Value>New Entry</Value>
+               </String>
+               <String>
+                  <Key>UserName</Key>
+                  <Value>myusername</Value>
+               </String>
+               <String>
+                  <Key>Password</Key>
+                  <Value Protected="True">/gCwZSxHyPVBBA==</Value>
+               </String>
+               <String>
+                  <Key>URL</Key>
+                  <Value>http://onliner.by</Value>
+               </String>
+               <String>
+                  <Key>Notes</Key>
+                  <Value />
+               </String>
+               <AutoType>
+                  <Enabled>True</Enabled>
+                  <DataTransferObfuscation>1</DataTransferObfuscation>
+                  <Association>
+                     <Window>Target Window</Window>
+                     <KeystrokeSequence>{USERNAME}{TAB}{PASSWORD}{TAB}{ENTER}</KeystrokeSequence>
+                  </Association>
+               </AutoType>
+               <History />
+            </Entry>
+         </Group>
+      </Group>
+      <DeletedObjects />
+   </Root>
+</KeePassFile>

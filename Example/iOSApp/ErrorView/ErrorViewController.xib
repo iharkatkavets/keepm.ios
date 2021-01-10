@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorViewController" customModule="iOSApp" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="qA2-nO-4Fb" id="ly0-Nz-amk"/>
+                <outlet property="titleLabel" destination="3m6-u8-Neg" id="XW3-U6-pfi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="351"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzW-i0-5ZI">
+                    <rect key="frame" x="165" y="-42" width="84" height="84"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-error-cross" translatesAutoresizingMaskIntoConstraints="NO" id="SlF-ae-wI8">
+                            <rect key="frame" x="2" y="2" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="SlF-ae-wI8" secondAttribute="height" multiplier="1:1" id="Mq7-ft-hxn"/>
+                                <constraint firstAttribute="width" constant="80" id="c08-d2-1pr"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="SlF-ae-wI8" firstAttribute="top" secondItem="IzW-i0-5ZI" secondAttribute="top" constant="2" id="7UX-WC-RuX"/>
+                        <constraint firstItem="SlF-ae-wI8" firstAttribute="centerY" secondItem="IzW-i0-5ZI" secondAttribute="centerY" id="o27-jh-L16"/>
+                        <constraint firstItem="SlF-ae-wI8" firstAttribute="leading" secondItem="IzW-i0-5ZI" secondAttribute="leading" constant="2" id="pFe-KP-RuD"/>
+                        <constraint firstItem="SlF-ae-wI8" firstAttribute="centerX" secondItem="IzW-i0-5ZI" secondAttribute="centerX" id="z4Y-an-bck"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="42"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-u8-Neg">
+                    <rect key="frame" x="16" y="58" width="382" height="21"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA2-nO-4Fb">
+                    <rect key="frame" x="16" y="95" width="382" height="174"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-2W-tnz" customClass="ErrorButton" customModule="iOSApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="285" width="382" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5cM-Xi-7vt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="OK"/>
+                    <connections>
+                        <action selector="okDidTap:" destination="-1" eventType="touchUpInside" id="iEU-48-eZL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IzW-i0-5ZI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0dB-Q4-IPG"/>
+                <constraint firstItem="qA2-nO-4Fb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3kl-7f-1AZ"/>
+                <constraint firstItem="bJF-2W-tnz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6EY-XF-CIa"/>
+                <constraint firstItem="3m6-u8-Neg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="8zB-Ss-Pnf"/>
+                <constraint firstAttribute="trailing" secondItem="qA2-nO-4Fb" secondAttribute="trailing" constant="16" id="FEA-r2-4pz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bJF-2W-tnz" secondAttribute="bottom" constant="16" id="Q7R-V1-h9L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bJF-2W-tnz" secondAttribute="trailing" constant="16" id="Tae-ek-pfD"/>
+                <constraint firstItem="qA2-nO-4Fb" firstAttribute="top" secondItem="3m6-u8-Neg" secondAttribute="bottom" constant="16" id="V9r-YC-Skv"/>
+                <constraint firstItem="3m6-u8-Neg" firstAttribute="top" secondItem="IzW-i0-5ZI" secondAttribute="bottom" constant="16" id="WQd-dZ-mVJ"/>
+                <constraint firstItem="bJF-2W-tnz" firstAttribute="top" secondItem="qA2-nO-4Fb" secondAttribute="bottom" constant="16" id="ccv-jp-gpD"/>
+                <constraint firstItem="bJF-2W-tnz" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qHM-Hz-DI1"/>
+                <constraint firstAttribute="top" secondItem="IzW-i0-5ZI" secondAttribute="centerY" id="sze-F2-Rpl"/>
+                <constraint firstItem="qA2-nO-4Fb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="v5f-i0-gUy"/>
+                <constraint firstAttribute="trailing" secondItem="3m6-u8-Neg" secondAttribute="trailing" constant="16" id="xX8-fU-BBq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.23188405797103" y="-85.379464285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-error-cross" width="80" height="80"/>
+    </resources>
+</document>

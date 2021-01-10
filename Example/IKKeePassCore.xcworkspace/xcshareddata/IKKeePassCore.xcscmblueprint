@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1AEEB32C737330F40467A9C008434ADAF232503C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1AEEB32C737330F40467A9C008434ADAF232503C" : 9223372036854775807,
+    "B65C83C3FA00E836BDB7AE82F4F79189CBC8D8A4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "59831165-B916-4D5F-B679-137F88732A21",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1AEEB32C737330F40467A9C008434ADAF232503C" : "swift-keepass-core\/",
+    "B65C83C3FA00E836BDB7AE82F4F79189CBC8D8A4" : "github\/CleanTests\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IKKeePassCore",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/IKKeePassCore.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:igorkotkovets\/swift-keepass-core.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1AEEB32C737330F40467A9C008434ADAF232503C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:igorkotkovets\/pod.swift.clean-tests.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B65C83C3FA00E836BDB7AE82F4F79189CBC8D8A4"
+    }
+  ]
+}

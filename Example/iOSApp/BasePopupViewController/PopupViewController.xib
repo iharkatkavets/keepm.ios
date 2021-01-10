@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController" customModule="iOSApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="OQl-lA-fKN" id="AKL-84-c7l"/>
+                <outlet property="contentViewBottomConstraint" destination="JKv-fy-HIj" id="oRc-80-jMb"/>
+                <outlet property="contentViewHeightConstraint" destination="Xl5-9J-EON" id="g2G-0h-PIq"/>
+                <outlet property="contentViewTopConstraint" destination="TFH-bk-6NA" id="DrS-1D-jTf"/>
+                <outlet property="contentViewVerticalCenterConstraint" destination="KqR-QF-9LC" id="dP5-XR-LUU"/>
+                <outlet property="safeAreaBottomConstraint" destination="qCB-2n-Vec" id="NA4-eu-LfU"/>
+                <outlet property="safeAreaButton" destination="XVk-cb-3Gv" id="c4Y-lM-E9y"/>
+                <outlet property="safeAreaTopConstraint" destination="8ft-tL-eQu" id="qA4-Dn-TC0"/>
+                <outlet property="view" destination="z1g-5X-mpu" id="OlZ-yX-UUV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="z1g-5X-mpu">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVk-cb-3Gv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQl-lA-fKN">
+                    <rect key="frame" x="52" y="448" width="310.5" height="0.0"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="6lt-AO-LmV" customClass="PopupBackgroundView" customModule="iOSApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="310.5" height="0.0"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6lt-AO-LmV" firstAttribute="top" secondItem="OQl-lA-fKN" secondAttribute="top" id="NfS-F7-nme"/>
+                        <constraint firstItem="6lt-AO-LmV" firstAttribute="leading" secondItem="OQl-lA-fKN" secondAttribute="leading" id="PYl-Xc-8af"/>
+                        <constraint firstAttribute="trailing" secondItem="6lt-AO-LmV" secondAttribute="trailing" id="UYJ-Tt-HXA"/>
+                        <constraint firstAttribute="height" priority="1" id="Xl5-9J-EON"/>
+                        <constraint firstAttribute="bottom" secondItem="6lt-AO-LmV" secondAttribute="bottom" id="du0-Jn-TXh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XVk-cb-3Gv" firstAttribute="top" secondItem="z1g-5X-mpu" secondAttribute="top" id="8ft-tL-eQu"/>
+                <constraint firstItem="hmu-Ma-fMI" firstAttribute="bottom" secondItem="OQl-lA-fKN" secondAttribute="bottom" priority="250" constant="414" id="JKv-fy-HIj"/>
+                <constraint firstItem="OQl-lA-fKN" firstAttribute="centerY" secondItem="z1g-5X-mpu" secondAttribute="centerY" priority="750" id="KqR-QF-9LC"/>
+                <constraint firstItem="OQl-lA-fKN" firstAttribute="top" secondItem="hmu-Ma-fMI" secondAttribute="top" priority="250" constant="404" id="TFH-bk-6NA"/>
+                <constraint firstItem="hmu-Ma-fMI" firstAttribute="trailing" secondItem="XVk-cb-3Gv" secondAttribute="trailing" id="cf4-t8-k2B"/>
+                <constraint firstItem="XVk-cb-3Gv" firstAttribute="leading" secondItem="hmu-Ma-fMI" secondAttribute="leading" id="csQ-XR-5Zm"/>
+                <constraint firstAttribute="bottom" secondItem="XVk-cb-3Gv" secondAttribute="bottom" id="qCB-2n-Vec"/>
+                <constraint firstItem="OQl-lA-fKN" firstAttribute="centerX" secondItem="z1g-5X-mpu" secondAttribute="centerX" id="qad-dQ-TM6"/>
+                <constraint firstItem="OQl-lA-fKN" firstAttribute="width" secondItem="z1g-5X-mpu" secondAttribute="width" multiplier="3:4" id="y7y-Z4-uU5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="hmu-Ma-fMI"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+</document>
