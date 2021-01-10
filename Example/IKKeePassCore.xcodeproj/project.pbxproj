@@ -64,7 +64,6 @@
 		D8297B8924C6048B00CC17A8 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8297B8824C6048B00CC17A8 /* URL+Extensions.swift */; };
 		D8297B8B24C6073D00CC17A8 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8297B8A24C6073D00CC17A8 /* URLExtensionsTests.swift */; };
 		D8297B8C24C6080F00CC17A8 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8297B8824C6048B00CC17A8 /* URL+Extensions.swift */; };
-		D8297B8D24C608B400CC17A8 /* KdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5127E242EA3C60077A5C8 /* KdbService.swift */; };
 		D8297B8E24C608CA00CC17A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A8842123DE271100000DC1 /* Constants.swift */; };
 		D8297B8F24C608DB00CC17A8 /* FileMetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6B4A523F5673A002B5E9C /* FileMetadataManager.swift */; };
 		D8297B9024C60C3D00CC17A8 /* MetadataPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D871A2132497FDFC00AE6F40 /* MetadataPathBuilder.swift */; };
@@ -202,7 +201,6 @@
 		D8B2F51B23FDB0BB00A5A287 /* ErrorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2F51A23FDB0BB00A5A287 /* ErrorButton.swift */; };
 		D8B2F51E23FDD9E200A5A287 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2F51D23FDD9E200A5A287 /* StyledTextField.swift */; };
 		D8B4B62423F325130079125B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A8842123DE271100000DC1 /* Constants.swift */; };
-		D8B5127F242EA3C60077A5C8 /* KdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5127E242EA3C60077A5C8 /* KdbService.swift */; };
 		D8B79A3B23BF5E8900123E90 /* GoogleDriveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B79A3A23BF5E8900123E90 /* GoogleDriveRouter.swift */; };
 		D8B79A3E23BFC8E600123E90 /* BigTextForSalsa.txt in Resources */ = {isa = PBXBuildFile; fileRef = D8B79A3D23BFC8E600123E90 /* BigTextForSalsa.txt */; };
 		D8B80953240D8E29009EE202 /* RxSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B80952240D8E29009EE202 /* RxSwift+Extensions.swift */; };
@@ -225,6 +223,8 @@
 		D8C85DEA238C555F004172E7 /* KdbGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C85DE8238C555F004172E7 /* KdbGroupTableViewCell.xib */; };
 		D8C85DEE238C5C94004172E7 /* GroupListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C85DED238C5C94004172E7 /* GroupListPresenter.swift */; };
 		D8C85DF0238C5CC5004172E7 /* GroupListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C85DEF238C5CC5004172E7 /* GroupListAssembly.swift */; };
+		D8D6434525AB7D2800B8ACBC /* KdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5127E242EA3C60077A5C8 /* KdbService.swift */; };
+		D8D6434D25AB7D2A00B8ACBC /* KdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5127E242EA3C60077A5C8 /* KdbService.swift */; };
 		D8D772472381D53700EB6CC1 /* UIViewController+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D772462381D53700EB6CC1 /* UIViewController+UITextField.swift */; };
 		D8DA023924A33DCB00B80AB8 /* RxErrorAlertViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DA023724A33DCB00B80AB8 /* RxErrorAlertViewCoordinator.swift */; };
 		D8DC78F325A73877001F6469 /* KdbSignatureReaderWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC78F225A73877001F6469 /* KdbSignatureReaderWriterTests.swift */; };
@@ -1788,12 +1788,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSAppAcceptanceTests/Pods-iOSAppAcceptanceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSAppAcceptanceTests/Pods-iOSAppAcceptanceTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeePassCore/KeePassCore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSAppAcceptanceTests/Pods-iOSAppAcceptanceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeePassCore.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1823,12 +1824,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1840,12 +1842,43 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/DiffableDataSources/DiffableDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KeePassCore/KeePassCore.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DiffableDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeePassCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1875,12 +1908,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pods_Tests/Pods-Pods_Tests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pods_Tests/Pods-Pods_Tests-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pods_Tests/Pods-Pods_Tests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1910,12 +1944,29 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pods_Tests/Pods-Pods_Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pods_Tests/Pods-Pods_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/KeePassCore/KeePassCore.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pods_Tests/Pods-Pods_Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeePassCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2065,6 +2116,7 @@
 				D814AD3123DC96990089AA64 /* EntryAddViewModel.swift in Sources */,
 				D8C85DE9238C555F004172E7 /* KdbGroupTableViewCell.swift in Sources */,
 				D8FECECD23F724B90065F8EF /* PanDirectionGestureRecognizer.swift in Sources */,
+				D8D6434525AB7D2800B8ACBC /* KdbService.swift in Sources */,
 				D89C8D6724045D7900B9206C /* TitleViewModel.swift in Sources */,
 				D8699C7723BDF19B008FB901 /* GoogleDriveService.swift in Sources */,
 				D896DF1624006C640074C685 /* NeoButton.swift in Sources */,
@@ -2115,7 +2167,6 @@
 				D8E267B823E9786B006B7220 /* ErrorViewAssembly.swift in Sources */,
 				D83CED8125A902FC00D506DE /* GoogleDriveSignInOperation.swift in Sources */,
 				D806557B23F85AFE00A766C4 /* UIImageView+Extensions.swift in Sources */,
-				D8B5127F242EA3C60077A5C8 /* KdbService.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				D8F32BF223DF70640019EFE8 /* NewDatabaseRouter.swift in Sources */,
 				D8E4354223F5D1DF00900C23 /* UIScrollView+Extensions.swift in Sources */,
@@ -2183,7 +2234,6 @@
 				D8E99ED524A3EF7A00A7193E /* MetadataFilesFilter.swift in Sources */,
 				D861EF6323C0FD940042041B /* SortDescriptorTests.swift in Sources */,
 				D87CCA0523A67911009BB5A6 /* KdbCoreTests.swift in Sources */,
-				D8297B8D24C608B400CC17A8 /* KdbService.swift in Sources */,
 				D8EA28BA23E20B6F007223E0 /* XCTAssert+Extensions.swift in Sources */,
 				D8297B8E24C608CA00CC17A8 /* Constants.swift in Sources */,
 				D8F76EBE24A4CBD100E06E5C /* AppStorage.swift in Sources */,
@@ -2199,6 +2249,7 @@
 				D8297B9024C60C3D00CC17A8 /* MetadataPathBuilder.swift in Sources */,
 				D8EA96DA1F3503FF00CD91B7 /* KeePassCoreTestsConstants.swift in Sources */,
 				D8E11AB423BA50E300D2F419 /* Salsa20CipherTests.swift in Sources */,
+				D8D6434D25AB7D2A00B8ACBC /* KdbService.swift in Sources */,
 				D8DC793525A8499B001F6469 /* PlainXMLReaderTests.swift in Sources */,
 				D80600F823D36BA000010F11 /* HashedBlockStreamTests.swift in Sources */,
 				D8C7BAFC23E358AE001AB1F8 /* Kdb4ReaderWriterTests.swift in Sources */,
