@@ -1,9 +1,6 @@
-# IKKeePassCore
+# KDBX FILES LIBRARY
 
-[![CI Status](http://img.shields.io/travis/Igor Kotkovets/IKKeePassCore.svg?style=flat)](https://travis-ci.org/Igor Kotkovets/IKKeePassCore)
-[![Version](https://img.shields.io/cocoapods/v/IKKeePassCore.svg?style=flat)](http://cocoapods.org/pods/IKKeePassCore)
-[![License](https://img.shields.io/cocoapods/l/IKKeePassCore.svg?style=flat)](http://cocoapods.org/pods/IKKeePassCore)
-[![Platform](https://img.shields.io/cocoapods/p/IKKeePassCore.svg?style=flat)](http://cocoapods.org/pods/IKKeePassCore)
+
 
 // https://habr.com/ru/post/346820/
 // https://gist.github.com/lgg/e6ccc6e212d18dd2ecd8a8c116fb1e45
