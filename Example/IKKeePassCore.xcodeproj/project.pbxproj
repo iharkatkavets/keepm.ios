@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -41,6 +41,7 @@
 		D806557D23F85C3700A766C4 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D806557C23F85C3700A766C4 /* UIButton+Extensions.swift */; };
 		D806557F23F876C000A766C4 /* Demo-secrets.kdbx in Resources */ = {isa = PBXBuildFile; fileRef = D806557E23F876C000A766C4 /* Demo-secrets.kdbx */; };
 		D806558123F87C5500A766C4 /* Demo-secrets.kdbx.meta.json in Resources */ = {isa = PBXBuildFile; fileRef = D806558023F87C5500A766C4 /* Demo-secrets.kdbx.meta.json */; };
+		D80AF4C625FFF14300522DD3 /* MetadataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80AF4C525FFF14300522DD3 /* MetadataStore.swift */; };
 		D80FFC691F9FAFD0007A7706 /* GZipTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FFC681F9FAFD0007A7706 /* GZipTestConstants.swift */; };
 		D813DBB32378A39300D7FF5B /* 123456789.kdbx in Resources */ = {isa = PBXBuildFile; fileRef = D813DBB22378A39200D7FF5B /* 123456789.kdbx */; };
 		D814AD3123DC96990089AA64 /* EntryAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814AD3023DC96990089AA64 /* EntryAddViewModel.swift */; };
@@ -151,6 +152,7 @@
 		D874BD4D1F0D7FC200F37A97 /* FilesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874BD4B1F0D7FC200F37A97 /* FilesListViewController.swift */; };
 		D874BD4E1F0D7FC200F37A97 /* FilesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D874BD4C1F0D7FC200F37A97 /* FilesListViewController.xib */; };
 		D87CCA0523A67911009BB5A6 /* KdbCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CCA0423A67911009BB5A6 /* KdbCoreTests.swift */; };
+		D8827C9925FFF30900D23553 /* MetadataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8827C9725FFF30900D23553 /* MetadataModel.xcdatamodeld */; };
 		D884FBDB249F789F0066CBFA /* VersionableCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884FBDA249F789F0066CBFA /* VersionableCodable.swift */; };
 		D88552FC23E15FEC000B3D69 /* EntryBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88552FB23E15FEC000B3D69 /* EntryBaseViewModel.swift */; };
 		D88C055423BF1138006C7A85 /* GoogleDriveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88C055323BF1137006C7A85 /* GoogleDriveViewModel.swift */; };
@@ -225,8 +227,6 @@
 		D8C85DF0238C5CC5004172E7 /* GroupListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C85DEF238C5CC5004172E7 /* GroupListAssembly.swift */; };
 		D8D6434525AB7D2800B8ACBC /* KdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5127E242EA3C60077A5C8 /* KdbService.swift */; };
 		D8D6434D25AB7D2A00B8ACBC /* KdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5127E242EA3C60077A5C8 /* KdbService.swift */; };
-		D8D772472381D53700EB6CC1 /* UIViewController+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D772462381D53700EB6CC1 /* UIViewController+UITextField.swift */; };
-		D8DA023924A33DCB00B80AB8 /* RxErrorAlertViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DA023724A33DCB00B80AB8 /* RxErrorAlertViewCoordinator.swift */; };
 		D8DC78F325A73877001F6469 /* KdbSignatureReaderWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC78F225A73877001F6469 /* KdbSignatureReaderWriterTests.swift */; };
 		D8DC793525A8499B001F6469 /* PlainXMLReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC793425A8499B001F6469 /* PlainXMLReaderTests.swift */; };
 		D8DC794C25A84D5E001F6469 /* database.kdbx in Resources */ = {isa = PBXBuildFile; fileRef = D8DC794B25A84D5E001F6469 /* database.kdbx */; };
@@ -378,6 +378,7 @@
 		D806557C23F85C3700A766C4 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		D806557E23F876C000A766C4 /* Demo-secrets.kdbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Demo-secrets.kdbx"; sourceTree = "<group>"; };
 		D806558023F87C5500A766C4 /* Demo-secrets.kdbx.meta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Demo-secrets.kdbx.meta.json"; sourceTree = "<group>"; };
+		D80AF4C525FFF14300522DD3 /* MetadataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataStore.swift; sourceTree = "<group>"; };
 		D80FFC681F9FAFD0007A7706 /* GZipTestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZipTestConstants.swift; sourceTree = "<group>"; };
 		D81335AD1F93AE4900FA4FA4 /* iOSAppAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81335B11F93AE4900FA4FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -482,6 +483,7 @@
 		D874BD4B1F0D7FC200F37A97 /* FilesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesListViewController.swift; sourceTree = "<group>"; };
 		D874BD4C1F0D7FC200F37A97 /* FilesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilesListViewController.xib; sourceTree = "<group>"; };
 		D87CCA0423A67911009BB5A6 /* KdbCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KdbCoreTests.swift; sourceTree = "<group>"; };
+		D8827C9825FFF30900D23553 /* MetadataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetadataModel.xcdatamodel; sourceTree = "<group>"; };
 		D884FBDA249F789F0066CBFA /* VersionableCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionableCodable.swift; sourceTree = "<group>"; };
 		D88552FB23E15FEC000B3D69 /* EntryBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryBaseViewModel.swift; sourceTree = "<group>"; };
 		D88C055323BF1137006C7A85 /* GoogleDriveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveViewModel.swift; sourceTree = "<group>"; };
@@ -553,12 +555,10 @@
 		D8C85DE8238C555F004172E7 /* KdbGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KdbGroupTableViewCell.xib; sourceTree = "<group>"; };
 		D8C85DED238C5C94004172E7 /* GroupListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListPresenter.swift; sourceTree = "<group>"; };
 		D8C85DEF238C5CC5004172E7 /* GroupListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListAssembly.swift; sourceTree = "<group>"; };
-		D8D772462381D53700EB6CC1 /* UIViewController+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UITextField.swift"; sourceTree = "<group>"; };
 		D8D9EB111F0427BC007A7945 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8D9EB181F042C03007A7945 /* MacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D9EB281F042C03007A7945 /* MacAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D9EB331F042C03007A7945 /* MacAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8DA023724A33DCB00B80AB8 /* RxErrorAlertViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxErrorAlertViewCoordinator.swift; sourceTree = "<group>"; };
 		D8DC78F225A73877001F6469 /* KdbSignatureReaderWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KdbSignatureReaderWriterTests.swift; sourceTree = "<group>"; };
 		D8DC793425A8499B001F6469 /* PlainXMLReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainXMLReaderTests.swift; sourceTree = "<group>"; };
 		D8DC794B25A84D5E001F6469 /* database.kdbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.kdbx; sourceTree = "<group>"; };
@@ -857,6 +857,15 @@
 			path = HashedBlockStreamTests;
 			sourceTree = "<group>";
 		};
+		D80AF4C425FFF10400522DD3 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				D80AF4C525FFF14300522DD3 /* MetadataStore.swift */,
+				D8827C9725FFF30900D23553 /* MetadataModel.xcdatamodeld */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
 		D80FFC671F9FAF1D007A7706 /* TestData */ = {
 			isa = PBXGroup;
 			children = (
@@ -922,6 +931,7 @@
 				D897D7902377070C00EC6813 /* AppStorage.swift */,
 				D822A145243B8A0400C2D604 /* GoogleDrive */,
 				D8A6B4A523F5673A002B5E9C /* FileMetadataManager.swift */,
+				D80AF4C425FFF10400522DD3 /* Metadata */,
 				D899E7B5249AA38F00443886 /* FileMetadata.swift */,
 				D871A2132497FDFC00AE6F40 /* MetadataPathBuilder.swift */,
 				D861EF5B23C0C8030042041B /* Once.swift */,
@@ -1123,7 +1133,6 @@
 				D8F484081F10EB93007475A3 /* FileTableViewCell.xib */,
 				D8BEA53220556BFD0074C0FC /* FilesListRouter.swift */,
 				D8BEA53420556CC80074C0FC /* FilesListPresenter.swift */,
-				D8D772462381D53700EB6CC1 /* UIViewController+UITextField.swift */,
 				D8E99ED024A3EE4F00A7193E /* MetadataFilesFilter.swift */,
 			);
 			path = FilesList;
@@ -1310,7 +1319,6 @@
 			children = (
 				D8A2AF9524A790A700697381 /* ErrorAlertViewAssembly.swift */,
 				D8A2AF9624A790A800697381 /* ErrorAlertViewCoordinator.swift */,
-				D8DA023724A33DCB00B80AB8 /* RxErrorAlertViewCoordinator.swift */,
 			);
 			path = ErrorAlertView;
 			sourceTree = "<group>";
@@ -2123,6 +2131,7 @@
 				D814AD3323DC97040089AA64 /* EntryViewModelInput.swift in Sources */,
 				D8BEA53C20556E190074C0FC /* UserSessionService.swift in Sources */,
 				D8010CD72055AD1700A8FC30 /* MainRouter.swift in Sources */,
+				D80AF4C625FFF14300522DD3 /* MetadataStore.swift in Sources */,
 				D84693051F16B68A00C591D4 /* ReadAssembly.swift in Sources */,
 				D8C85DEE238C5C94004172E7 /* GroupListPresenter.swift in Sources */,
 				D8B119FF23DA27E6006F8DF8 /* EnterTitleCoordinator.swift in Sources */,
@@ -2162,7 +2171,6 @@
 				D840958223ECAB43004F5F8E /* AppNavigationController.swift in Sources */,
 				D85FB3012402A7C400086840 /* DribbbleTextView.swift in Sources */,
 				D88552FC23E15FEC000B3D69 /* EntryBaseViewModel.swift in Sources */,
-				D8DA023924A33DCB00B80AB8 /* RxErrorAlertViewCoordinator.swift in Sources */,
 				D8BEA53D20556E190074C0FC /* ServicesPool.swift in Sources */,
 				D8E267B823E9786B006B7220 /* ErrorViewAssembly.swift in Sources */,
 				D83CED8125A902FC00D506DE /* GoogleDriveSignInOperation.swift in Sources */,
@@ -2171,7 +2179,6 @@
 				D8F32BF223DF70640019EFE8 /* NewDatabaseRouter.swift in Sources */,
 				D8E4354223F5D1DF00900C23 /* UIScrollView+Extensions.swift in Sources */,
 				D8B2F51923FDAC3600A5A287 /* PopupBackgroundView.swift in Sources */,
-				D8D772472381D53700EB6CC1 /* UIViewController+UITextField.swift in Sources */,
 				D8F32BF423DF70640019EFE8 /* NewDatabaseAssembly.swift in Sources */,
 				D897B2AC23B8AFAF0047F1E2 /* EntryFieldViewModel.swift in Sources */,
 				D884FBDB249F789F0066CBFA /* VersionableCodable.swift in Sources */,
@@ -2180,6 +2187,7 @@
 				D8BF473D23F48D49000F91F8 /* DownloadingViewModel.swift in Sources */,
 				D8F82D2123A7EFC100B80AB2 /* EntryViewController.swift in Sources */,
 				D819501323FB20BF006C6059 /* PopupOKButton.swift in Sources */,
+				D8827C9925FFF30900D23553 /* MetadataModel.xcdatamodeld in Sources */,
 				D83CED7825A9028F00D506DE /* GoogleDriveOperation.swift in Sources */,
 				D8E267C023E97F01006B7220 /* PasswordRouter.swift in Sources */,
 				D84B93F4240BB05D009032CF /* AppSettingsCell.swift in Sources */,
@@ -2444,8 +2452,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -2462,10 +2469,7 @@
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1.6;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.katkavets.kdbxapp;
@@ -2490,10 +2494,7 @@
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1.6;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.katkavets.kdbxapp;
@@ -2521,11 +2522,7 @@
 				);
 				INFOPLIST_FILE = Pods_Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -2545,11 +2542,7 @@
 				);
 				INFOPLIST_FILE = Pods_Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -2573,11 +2566,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iOSAppAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IK.iOSAppAcceptanceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2602,11 +2591,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iOSAppAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IK.iOSAppAcceptanceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -2654,11 +2639,7 @@
 				INFOPLIST_FILE = PlaygroundsUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.PlaygroundsUI;
@@ -2694,11 +2675,7 @@
 				INFOPLIST_FILE = PlaygroundsUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.PlaygroundsUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2723,10 +2700,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = MacApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.MacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2748,10 +2722,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = MacApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.MacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2773,11 +2744,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = MacAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.MacAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2800,11 +2767,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = MacAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.MacAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2825,11 +2788,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = MacAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.MacAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2850,11 +2809,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = MacAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = IK.MacAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2949,6 +2904,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8827C9725FFF30900D23553 /* MetadataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8827C9825FFF30900D23553 /* MetadataModel.xcdatamodel */,
+			);
+			currentVersion = D8827C9825FFF30900D23553 /* MetadataModel.xcdatamodel */;
+			path = MetadataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

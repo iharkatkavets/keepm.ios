@@ -9,7 +9,7 @@
 import Swinject
 import Foundation
 
-protocol NewDatabaseViewInput: class {
+protocol NewDatabaseViewInput: AnyObject {
     func getViewController() -> NewDatabaseViewController
     func showEnteringPasswordsError(text: String)
     func clearEnteringPasswordsError()
@@ -78,7 +78,6 @@ class NewDatabaseViewController: UIViewController, NewDatabaseViewInput, PopupPr
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-
  
     func getViewController() -> NewDatabaseViewController {
         return self

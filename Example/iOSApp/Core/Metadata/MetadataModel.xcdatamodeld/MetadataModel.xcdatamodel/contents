@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDBaseFileMetadata" representedClassName="CDBaseFileMetadata" syncable="YES" codeGenerationType="class">
+        <attribute name="changed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="modifyDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="relativePath" optional="YES" attributeType="String"/>
+        <attribute name="touchIDEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="version" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDGoogleDriveFileMetadata" representedClassName="CDGoogleDriveFileMetadata" syncable="YES" codeGenerationType="class">
+        <attribute name="fileId" optional="YES" attributeType="String"/>
+        <attribute name="fileVersion" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mimeType" optional="YES" attributeType="String"/>
+        <attribute name="syncDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="base" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDBaseFileMetadata"/>
+    </entity>
+    <entity name="CDLocalFileMetadata" representedClassName="CDLocalFileMetadata" syncable="YES" codeGenerationType="class">
+        <relationship name="base" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDBaseFileMetadata"/>
+    </entity>
+    <elements>
+        <element name="CDBaseFileMetadata" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="CDGoogleDriveFileMetadata" positionX="-54" positionY="-9" width="128" height="104"/>
+        <element name="CDLocalFileMetadata" positionX="-36" positionY="9" width="128" height="44"/>
+    </elements>
+</model>

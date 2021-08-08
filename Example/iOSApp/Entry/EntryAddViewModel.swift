@@ -14,7 +14,9 @@ class EntryAddViewModel: EntryBaseViewModel {
     let entry = Kdb.Entry()
     let parentGroup: Kdb.Group
 
-    init(kdbGroup: Kdb.Group, servicesPool: ServicesPoolInput, refreshCallback: @escaping () -> Void) {
+    init(kdbGroup: Kdb.Group,
+         servicesPool: ServicesPoolInput,
+         refreshCallback: @escaping () -> Void) {
         self.parentGroup = kdbGroup
         entry.add(Kdb.StringField(withKey: Kdb.StringField.DefaultKeys.Title.rawValue))
         entry.add(Kdb.StringField(withKey: Kdb.StringField.DefaultKeys.UserName.rawValue))

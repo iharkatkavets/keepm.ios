@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,25 +31,25 @@
                     <rect key="frame" x="16" y="16" width="245" height="322"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW DATABASE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdm-Sm-W3p" customClass="AppLabel" customModule="iOSApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="245" height="20.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="245" height="17"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="File name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xtv-vg-CBh" customClass="DribbbleTextField" customModule="iOSApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="36.5" width="245" height="34"/>
+                            <rect key="frame" x="0.0" y="33" width="245" height="34"/>
                             <color key="textColor" name="label"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cO4-9S-Las" customClass="DribbbleTextField" customModule="iOSApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="86.5" width="245" height="34"/>
+                            <rect key="frame" x="0.0" y="83" width="245" height="34"/>
                             <color key="textColor" name="label"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="new-password"/>
                         </textField>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sRK-Ve-iBx">
-                            <rect key="frame" x="0.0" y="136.5" width="245" height="42"/>
+                            <rect key="frame" x="0.0" y="133" width="245" height="42"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q0A-l4-Ri8" customClass="DribbbleTextField" customModule="iOSApp" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="245" height="34"/>
@@ -66,16 +66,16 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-K4-kDv">
-                            <rect key="frame" x="0.0" y="194.5" width="245" height="61.5"/>
+                            <rect key="frame" x="0.0" y="191" width="245" height="65"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Use Touch ID/Face ID to open next time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAq-N6-feG">
-                                    <rect key="frame" x="0.0" y="10.5" width="204" height="41"/>
+                                    <rect key="frame" x="0.0" y="12" width="204" height="41"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" name="label"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xr4-GK-y8u">
-                                    <rect key="frame" x="204" y="15.5" width="43" height="31"/>
+                                    <rect key="frame" x="204" y="17" width="43" height="31"/>
                                     <color key="onTintColor" name="secondary"/>
                                 </switch>
                             </subviews>
@@ -121,6 +121,14 @@
             <point key="canvasLocation" x="53.600000000000001" y="-28.785607196401802"/>
         </view>
     </objects>
+    <designables>
+        <designable name="9t2-XU-yqk">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+        <designable name="WUZ-I9-9JJ">
+            <size key="intrinsicContentSize" width="60" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="error">
             <color red="0.68999999761581421" green="0.0" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

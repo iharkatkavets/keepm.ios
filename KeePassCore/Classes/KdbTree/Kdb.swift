@@ -216,10 +216,14 @@ public struct Kdb {
             entries.append(entry)
         }
 
-        public func remove(_ entry: Entry) {
+        public func remove(_ entry: Entry) -> Bool {
             if let index = entries.firstIndex(where: { $0.uuid == entry.uuid }) {
                 let entryToDelete = entries.remove(at: index)
                 tree?.addEntryToRecycleBinIfNeeded(entryToDelete)
+                return true
+            }
+            else {
+                return false
             }
         }
 

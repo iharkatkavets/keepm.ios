@@ -150,13 +150,15 @@ class GroupListPresenter {
             return
         }
 
-        kdbGroup.remove(viewModel.entry)
-        do {
-            try kdbService.save()
-            self.reloadDisplayData()
-        } catch {
-            os_log(.error, log: self.outLog, "can't save changes %{public}@", error as NSError)
+        if kdbGroup.remove(viewModel.entry) == true {
+            do {
+                try kdbService.save()
+                self.reloadDisplayData()
+            } catch {
+                os_log(.error, log: self.outLog, "can't save changes %{public}@", error as NSError)
+            }
         }
+
     }
 
     func didSelectAdd() {

@@ -16,7 +16,7 @@ protocol FilesListViewInput: class {
     func displayTitle(_ title: String)
 }
 
-protocol FilesListViewOutput: class {
+protocol FilesListViewOutput: AnyObject {
     func didTriggerViewDidLoad()
     func didTriggerOpenInfo()
     func createFile(viewController: UIViewController)

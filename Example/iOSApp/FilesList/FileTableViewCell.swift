@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-protocol FileTableViewCellDelegate: class {
+protocol FileTableViewCellDelegate: AnyObject {
     func didTapShowInfo(_ info: String)
 }
 

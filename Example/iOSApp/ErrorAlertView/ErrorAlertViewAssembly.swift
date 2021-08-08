@@ -14,9 +14,5 @@ class ErrorAlertViewAssembly: Assembly {
         container.register(ErrorAlertViewCoordinatorInput.self) { _ in 
             return ErrorAlertViewCoordinator()
         }
-        
-        container.register(RxErrorAlertViewCoordinatorInput.self) { _ in
-            return RxErrorAlertViewCoordinator()
-        }
     }
 }

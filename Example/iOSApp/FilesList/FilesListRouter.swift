@@ -9,7 +9,6 @@
 import UIKit
 import Swinject
 import KeePassCore
-import RxSwift
 
 class FilesListRouter {
     let resolver: Resolver

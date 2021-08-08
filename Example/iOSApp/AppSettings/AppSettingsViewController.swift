@@ -11,11 +11,11 @@ import RxCocoa
 import Swinject
 import Foundation
 
-protocol AppSettingsViewInput: class {
+protocol AppSettingsViewInput: AnyObject {
     func getViewController() -> UIViewController
 }
 
-class AppSettingsViewController: UIViewController, AppSettingsViewInput {
+class AppSettingsViewController: UIViewController, AppSettingsViewInput, UITableViewDataSource, UITableViewDelegate {
     let resolver: Swinject.Resolver
     let viewModel: AppSettingsViewModel
     let disposeBag = DisposeBag()
@@ -38,7 +38,6 @@ class AppSettingsViewController: UIViewController, AppSettingsViewInput {
 
         let nib = UINib(nibName: "AppSettingsCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AppSettingsCell")
-
         tableView.tableFooterView = UIView()
     }
 
@@ -56,5 +55,14 @@ class AppSettingsViewController: UIViewController, AppSettingsViewInput {
             .disposed(by: disposeBag)
         }
 
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AppSettingsCell", for: indexPath)
+        return cell
     }
 }

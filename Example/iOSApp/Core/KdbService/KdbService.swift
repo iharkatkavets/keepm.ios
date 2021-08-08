@@ -48,9 +48,6 @@ open class KdbService: KdbServiceInput {
             let url = URL(fileURLWithPath: filePath)
             let fileHandle = try FileHandle(forReadingFrom: url)
             let inputStream = FileInputStream(withFileHandle: fileHandle)
-            //        let signatureReader = KdbSignatureReader()
-            //        let signature = try signatureReader.readSignature(inputStream)
-            //        let kdbReader = try createReaderForStream(inputStream, signature: signature)
             let kdbReader = Kdb4Reader(file: inputStream)
             self.databaseParameters = try kdbReader.readWithCredentials(credentials)
             return self.databaseParameters.tree!

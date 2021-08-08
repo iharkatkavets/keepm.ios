@@ -49,8 +49,6 @@ class ServicesPool: ServicesPoolInput {
         self.resolver = resolver
     }
 
-
-
     func closeKdbFile() {
         kdbServiceAdapter = nil
     }
