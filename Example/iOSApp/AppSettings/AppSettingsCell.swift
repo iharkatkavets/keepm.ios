@@ -7,37 +7,31 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 class AppSettingsCell: UITableViewCell {
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var switchControl: UISwitch!
-    var disposeBag = DisposeBag()
 
-    var viewModel: AppSettingsCellViewModel? {
+    var viewModel: AppSettingsModel? {
         didSet {
             titleLabel.text = viewModel?.title
-            switchControl.isHidden = viewModel?.switchIsHidden ?? true
-            switchControl.isOn = viewModel?.switchIsOn ?? false
-            viewModel?.bindSwitchToggleObservable(switchControl.rx.value.asObservable(),
-                                                  disposeBag: disposeBag)
+            switchControl.isHidden = viewModel?.boolValue == nil
+            switchControl.isOn = viewModel?.boolValue ?? false
         }
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.switchControl.addTarget(self, action: #selector(userDidChangeSwitchControl(_:)), for: .valueChanged)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @objc private func userDidChangeSwitchControl(_ value: Bool) {
+        viewModel?.boolValueChangedHandler?(value)
     }
+    
 
     override func prepareForReuse() {
-        disposeBag = DisposeBag()
+        
     }
 
     

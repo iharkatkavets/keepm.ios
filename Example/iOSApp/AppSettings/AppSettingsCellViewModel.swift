@@ -26,3 +26,10 @@ class AppSettingsCellViewModel {
     }
     
 }
+
+class AppSettingsModel {
+    var title: String?
+    var boolValue: Bool?
+    var boolValueChangedHandler: ((Bool) -> Void)?
+    
+}

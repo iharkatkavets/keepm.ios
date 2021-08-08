@@ -124,7 +124,7 @@
 		D861A6AE240AF88F00FC7160 /* AppSettingsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861A6A9240AF88F00FC7160 /* AppSettingsViewRouter.swift */; };
 		D861A6AF240AF88F00FC7160 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861A6AA240AF88F00FC7160 /* AppSettingsViewController.swift */; };
 		D861A6B0240AF88F00FC7160 /* AppSettingsViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861A6AB240AF88F00FC7160 /* AppSettingsViewAssembly.swift */; };
-		D861A6B1240AF88F00FC7160 /* AppSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861A6AC240AF88F00FC7160 /* AppSettingsViewModel.swift */; };
+		D861A6B1240AF88F00FC7160 /* AppSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861A6AC240AF88F00FC7160 /* AppSettingsPresenter.swift */; };
 		D861A6B2240AF88F00FC7160 /* AppSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D861A6AD240AF88F00FC7160 /* AppSettingsViewController.xib */; };
 		D861EF5C23C0C8030042041B /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861EF5B23C0C8030042041B /* Once.swift */; };
 		D861EF5E23C0CB300042041B /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861EF5D23C0CB300042041B /* DispatchOnce.swift */; };
@@ -454,7 +454,7 @@
 		D861A6A9240AF88F00FC7160 /* AppSettingsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewRouter.swift; sourceTree = "<group>"; };
 		D861A6AA240AF88F00FC7160 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		D861A6AB240AF88F00FC7160 /* AppSettingsViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewAssembly.swift; sourceTree = "<group>"; };
-		D861A6AC240AF88F00FC7160 /* AppSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewModel.swift; sourceTree = "<group>"; };
+		D861A6AC240AF88F00FC7160 /* AppSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsPresenter.swift; sourceTree = "<group>"; };
 		D861A6AD240AF88F00FC7160 /* AppSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppSettingsViewController.xib; sourceTree = "<group>"; };
 		D861EF5B23C0C8030042041B /* Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
 		D861EF5D23C0CB300042041B /* DispatchOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
@@ -1075,7 +1075,7 @@
 				D861A6A9240AF88F00FC7160 /* AppSettingsViewRouter.swift */,
 				D861A6AA240AF88F00FC7160 /* AppSettingsViewController.swift */,
 				D861A6AB240AF88F00FC7160 /* AppSettingsViewAssembly.swift */,
-				D861A6AC240AF88F00FC7160 /* AppSettingsViewModel.swift */,
+				D861A6AC240AF88F00FC7160 /* AppSettingsPresenter.swift */,
 				D861A6AD240AF88F00FC7160 /* AppSettingsViewController.xib */,
 				D84B93EC240BAA3F009032CF /* AppSettingsCellViewModel.swift */,
 				D84B93F2240BB05C009032CF /* AppSettingsCell.swift */,
@@ -2191,7 +2191,7 @@
 				D83CED7825A9028F00D506DE /* GoogleDriveOperation.swift in Sources */,
 				D8E267C023E97F01006B7220 /* PasswordRouter.swift in Sources */,
 				D84B93F4240BB05D009032CF /* AppSettingsCell.swift in Sources */,
-				D861A6B1240AF88F00FC7160 /* AppSettingsViewModel.swift in Sources */,
+				D861A6B1240AF88F00FC7160 /* AppSettingsPresenter.swift in Sources */,
 				D8329E2723C3B93600580D9D /* AppSettingsService.swift in Sources */,
 				D89C8D6424045D7900B9206C /* TitleViewRouter.swift in Sources */,
 				D81A75C923EA0C1D0010558A /* ImageBuilder.swift in Sources */,

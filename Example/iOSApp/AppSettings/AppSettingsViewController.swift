@@ -6,25 +6,23 @@
 //  Copyright © 2020 CocoaPods. All rights reserved.
 //
 
-import RxSwift
-import RxCocoa
 import Swinject
 import Foundation
 
 protocol AppSettingsViewInput: AnyObject {
     func getViewController() -> UIViewController
+    func displaySettingsList(_: [AppSettingsModel])
 }
 
 class AppSettingsViewController: UIViewController, AppSettingsViewInput, UITableViewDataSource, UITableViewDelegate {
     let resolver: Swinject.Resolver
-    let viewModel: AppSettingsViewModel
-    let disposeBag = DisposeBag()
-    let once = DispatchOnce()
+    let presenter: AppSettingsPresenter
+    var models = [AppSettingsModel]()
     @IBOutlet private var tableView: UITableView!
 
-    init(withViewModel model: AppSettingsViewModel,
+    init(withViewModel model: AppSettingsPresenter,
          resolver: Resolver) {
-        self.viewModel = model
+        self.presenter = model
         self.resolver = resolver
         super.init(nibName: "AppSettingsViewController", bundle: nil)
     }
@@ -40,29 +38,29 @@ class AppSettingsViewController: UIViewController, AppSettingsViewInput, UITable
         tableView.register(nib, forCellReuseIdentifier: "AppSettingsCell")
         tableView.tableFooterView = UIView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        presenter.didTriggerViewWillAppear()
+    }
 
     func getViewController() -> UIViewController {
         return self
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        once.perform {
-            viewModel.cellViewModels().bind(to: tableView.rx.items(cellIdentifier: "AppSettingsCell", cellType: AppSettingsCell.self)) { (row, element, cell) in
-                cell.viewModel = element
-
-            }
-            .disposed(by: disposeBag)
-        }
-
-    }
     
+    func displaySettingsList(_ list: [AppSettingsModel]) {
+        self.models = list
+        self.tableView.reloadData()
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return models.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AppSettingsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AppSettingsCell", for: indexPath) as! AppSettingsCell
+        cell.viewModel = models[indexPath.row]
         return cell
     }
 }
